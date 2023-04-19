@@ -4,10 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Russo+One&display=swap" rel="stylesheet">
     <title>Rashid's GYM</title>
+    <style>
+        body{
+            font-family: 'Graduate', cursive;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            background: url('/img/girl.jpg');
+        }
+        .left{
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            /* border: 2px solid red; */
+        }
+        .left img{
+            width: 80px;
+            filter: invert(100%);
+        }
+        .left div{
+            line-height: 0px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .mid{
+            width: 45%;
+            margin: 20px auto;
+            border: 2px solid blue;
+        }
+
+        .navbar{
+            list-style-type: none;
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 20px;
+            font-size: 18px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+
+        }
+
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            border: 2px solid yellow;
+        }
+        .btn{
+            font-family: 'Graduate', cursive;
+            background-color: black;
+            color: white;
+            margin: 0px 10px;
+            padding: 8px 10px;
+            border: 2px solid gray;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(59, 56, 56);
+        }
+    </style>
 </head>
+ 
 <body>
-    <h1>this is testing</h1>
+    <div class="header">
+        <!-- box for logo -->
+        <div class="left">
+            <img src="img/gymlogo1.png" alt="">
+            <div>Rashid Fitness</div>
+        </div>
+        <!-- box for nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- box for buttons -->
+        <div class="right">
+            <button class="btn">Become a Membor</button>
+            <button class="btn">Call us now</button>
+        </div>
+    </div>
 </body>
 </html>
