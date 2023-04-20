@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Russo+One&display=swap" rel="stylesheet">
     <title>Rashid's GYM</title>
     <style>
-        body{
+        body {
             font-family: 'Graduate', cursive;
             color: white;
             padding: 0px;
             margin: 0px;
             background: url('/img/girl.jpg');
         }
-        .left{
+
+        .left {
             text-align: center;
             display: inline-block;
             position: absolute;
@@ -23,49 +25,56 @@
             top: 20px;
             /* border: 2px solid red; */
         }
-        .left img{
+
+        .left img {
             width: 80px;
             filter: invert(100%);
         }
-        .left div{
+
+        .left div {
             line-height: 0px;
             text-align: center;
             font-size: 13px;
         }
 
-        .mid{
+        .mid {
             width: 45%;
             margin: 20px auto;
             border: 2px solid blue;
         }
 
-        .navbar{
+        .navbar {
             list-style-type: none;
             display: inline-block;
         }
-        .navbar li{
+
+        .navbar li {
             display: inline-block;
         }
-        .navbar li a{
+
+        .navbar li a {
             color: white;
             text-decoration: none;
             padding: 34px 20px;
             font-size: 18px;
         }
-        .navbar li a:hover, .navbar li a.active{
+
+        .navbar li a:hover,
+        .navbar li a.active {
             text-decoration: underline;
             color: gray;
 
         }
 
-        .right{
+        .right {
             display: inline-block;
             position: absolute;
             right: 34px;
             top: 33px;
             border: 2px solid yellow;
         }
-        .btn{
+
+        .btn {
             font-family: 'Graduate', cursive;
             background-color: black;
             color: white;
@@ -76,12 +85,44 @@
             font-size: 12px;
             cursor: pointer;
         }
-        .btn:hover{
+
+        .btn:hover {
             background-color: rgb(59, 56, 56);
         }
+
+        .container {
+            margin: 130px 67px;
+            padding: 60px;
+            border-radius: 10px;
+            width: 33%;
+            border: 2px solid white;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            font-family: 'Graduate', cursive;
+            text-align: center;
+            font-size: 18px;
+            display: block;
+            width: 340px;
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 8px auto;
+            padding: 5px;
+        }
+
+        .container .btn {
+            display: block;
+            width: 70%;
+            margin: auto;
+            padding: 9px;
+            font-size: 18px;
     </style>
 </head>
- 
+
 <body>
     <div class="header">
         <!-- box for logo -->
@@ -104,5 +145,26 @@
             <button class="btn">Call us now</button>
         </div>
     </div>
+    <div class="container">
+        <h1>JOIN NOW THE RUSTAM'S BEST GYM</h1>
+        <form action="noaction.php">
+            <div class="group">
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Locality">
+                </div>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>
